@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript tasks</title>
+</head>
+<style>
+   #Changecolor:hover {
+   color: red;
+   }
+   #Btn:hover {
+   color:red;
+   }
+    .hidden-paragraph {
+      display: none;
+    }
+    #imageContainer {
+  position: relative;
+  width: 200px; /* Adjust the width and height to match your image */
+  height: 200px;
+}
+
+#imageText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 16px;
+  line-height: 200px; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+#heading {
+  background-color: lightgray;
+  padding: 10px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+#hoverParagraph {
+  text-decoration: none; /* Initially, no underline */
+  transition: text-decoration 0.3s ease; /* Add a smooth transition effect */
+}
+
+#hoverParagraph:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+</style>
+<body>
+
+    <!-- // 1. Create a simple event that prints a message when the user clicks on an element. -->
+    <!-- <a href="" onclick="alert('hello world');">Click me</a> -->
+
+    <!-- 2. Create an event that hides an element when the user clicks on a different element -->
+    <!-- <button id="hideButton">Hide Element</button>
+    <div id="elementToHide">This is the element to hide.</div> -->
+    
+    <!-- 3. Create a link that changes color when the user hovers over it and then back to its original color when the user moves the mouse away.-->
+    <!-- <a href="" id="Changecolor">Click here</a> -->
+
+<!-- 4. Create an event that scrolls to the top of the page when the user clicks on a link. --> 
+    <!-- <a href="#" id="scrollTopLink">Scroll to Top</a>  -->
+
+<!-- 5. Create a link that plays a sound when the user clicks on it. -->
+<!-- <a href="#" id="playSoundLink">Play Sound</a>
+<audio id="audioElement">
+<source src="./images/bismillah_ir_rahman.mp3" type="audio/mpeg">
+</audio> -->
+
+<!-- 6. Create a simple link that opens a new window when clicked. -->
+<!-- <a href="wwww.google.com" target="_blank">Click</a> -->
+
+<!-- 7. Create a simple button that alert a message when clicked.-->
+<!-- <button onclick="alert('Hello world');">Click me</button> -->
+
+<!-- 8. Create a button that changes color when the user hovers over it. -->
+<!-- <button style="background-color: greenyellow;" id="Btn">Click</button> -->
+
+<!-- 9. Create a link that plays a sound when the user clicks on it. -->
+<!-- <a href="#" id="playSoundLink">Play Sound</a>
+<audio id="audioElement">
+<source src="./images/bismillah_ir_rahman.mp3" type="audio/mpeg">
+</audio> -->
+
+<!-- 10. Create an event that alert a message when the user moves the mouse over an element -->
+<!-- <h1 onmousemove="alert('Hello World');">This is an element</h1> -->
+
+<!-- 11. Create an event that hides an element when the user moves the mouse out of it. -->
+<!-- <div id="elementToHide">Mouse over me</div> -->
+
+
+<!-- 12. Create a link that opens a new window when the user clicks
+on it and then closes the window when the user clicks on a close
+button in the new window. The size of the new window should be
+determined by the user's mouse position. -->
+
+<!-- <a href="#" id="openWindowLink">Open New Window</a> -->
+<!-- .................................................................................................. -->
+<!-- CHP 49,50 -->
+<!-- 1. Read the value of a user Input and print it to the console. -->
+<!-- <input type="text" id="userInput" placeholder="Enter something">
+<button onclick="printInput()">Submit</button> -->
+
+<!-- 2. Read the value of a checkbox and print it to the console -->
+<!-- <input type="checkbox" id="checkboxInput" value="Check this box">
+<button onclick="printCheckboxValue()">Submit</button> -->
+
+<!-- 3. Read the value of a select box and print it to the console. -->
+<!-- <select id="selectBox">
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+  <button onclick="printSelectValue()">Submit</button> -->
+  
+  <!-- 4. Place some text in a field. Make up an id for the field. -->
+  <!-- <input type="text" id="textField" value="This is some text"> -->
+
+  <!-- 5. Ask the user about Martial Status. If the variable married is false,
+  place the value "available" in the field with the id "status" -->
+
+  <!-- <input type="text" id="status" placeholder="Marital Status">
+  <button onclick="updateStatus()">Check Marital Status</button> -->
+  
+  <!-- 6. If a input is empty, fill it with a string -->
+
+  <!-- <input type="text" id="textField" placeholder="Enter text">
+  <button onclick="fillInput()">Fill Input</button> -->
+  
+  <!-- 7. Create a Registeration Form with Validation. -->
+
+<!-- ......................................................................................... -->
+
+    <!-- <h1>Registration Form</h1>
+    <form id="registrationForm">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+    <div id="errorMessages" style="color: red;"></div> -->
+<!-- ...................................................................................... -->
+<!-- CHP 51 -->
+
+<!-- 1. How can I create a paragraph that expands when the user clicks on a Show More? -->
+
+
+  <!-- <div class="paragraph">
+    <p>
+      This is the visible portion of the paragraph. It contains some content.
+    </p>
+    <p class="hidden-paragraph">
+      This is the hidden portion of the paragraph. It contains additional content that will be shown when the user clicks "Show More."
+    </p>
+    <a href="#" id="showMoreLink">Show More</a>
+  </div> -->
+
+  <!-- 2. Read the text of a paragraph and use it to search for a specific word or phrase. -->
+
+  <!-- <p id="paragraph">
+    This is a sample paragraph containing some text. You can search for specific words in this paragraph.
+  </p>
+  <input type="text" id="searchInput" placeholder="Enter word or phrase">
+  <button onclick="searchText()">Search</button>
+  <div id="searchResult"></div> -->
+  
+  <!-- 3. Read the text of a paragraph and use it to find the longest word. -->
+
+  <!-- <p id="paragraph">
+    This is a sample paragraph containing some text. You can find the longest word in this paragraph.
+  </p>
+  <button onclick="findLongestWord()">Find Longest Word</button>
+  <div id="longestWordResult"></div> -->
+  
+  <!-- 4. Set the text of a paragraph to the value of a text field, but only if the value is not empty. -->
+
+  <!-- <input type="text" id="textField" placeholder="Enter text">
+<button onclick="setTextFromInput()">Set Text</button>
+<p id="outputParagraph">This is a paragraph.</p> -->
+
+<!-- 5. Set the text of a paragraph to the value of a text field, but only if the value is equal to a specific word or phrase. -->
+
+<!-- <input type="text" id="textField" placeholder="Enter text">
+<button onclick="setTextFromInput()">Set Text</button>
+<p id="outputParagraph">This is a paragraph.</p> -->
+
+<!-- 6. Set the text of a paragraph to the value of a text field, but only if the value is less than a certain length. -->
+
+<!-- <input type="text" id="textField" placeholder="Enter text">
+<button onclick="setTextFromInput()">Set Text</button>
+<p id="outputParagraph">This is a paragraph.</p> -->
+<!-- .................................................................................................... -->
+<!-- CHP 52 -->
+<!-- 1. When the user clicks on the sentence, it turns bold. -->
+<!-- <p id="clickableSentence">Click this sentence to make it bold.</p> -->
+
+<!-- 2. How can I make an image disappear when the user hovers over it and show text instead? When the user hovers off the image, the original image should reappear. -->
+<!-- <div id="imageContainer">
+    <img id="image" src="./images/happy-cat.webp" alt="Image">
+    <p id="imageText">Hover over the image to see text.</p>
+  </div> -->
+  
+<!-- 3. When the user mouses over the heading, its background turns black, but it retains its original light gray color -->
+
+<!-- <h1 id="heading">Hover over me</h1> -->
+
+<!-- 4. When user hover to a paragraph, Add a underline style to text. -->
+<!-- <p id="hoverParagraph">Hover over me to underline the text.</p> -->
+<!-- ................................................................................ -->
+<!-- CHP 52 -->
+<!-- 1. Swap the images when the user clicks on a button. -->
+<!-- <img id="image" src="./images/p2.jpg" alt="Image 1">
+<button onclick="swapImage()">Swap Image</button> -->
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
